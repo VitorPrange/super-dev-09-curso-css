@@ -1,0 +1,16 @@
+img{
+    width: 800px;
+}
+
+img:nth-of-type(2){
+    width: 1000px;
+    border: 10px solid red;
+}
+
+p:nth-of-type(2){
+    width: 700px;
+    height: 100px;
+    background-color: #ff7f50;
+    color: #ffffff;
+    text-align: center;
+}
