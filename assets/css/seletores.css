@@ -1,0 +1,89 @@
+h1{
+    color: violet;
+}
+
+#caixa1{
+    background-color: aquamarine;
+    margin-right: 20%;
+}
+
+#caixa2{
+    background-color: tomato;
+    margin-right: 20%;
+}
+
+#caixa3{
+    background-color: palegreen;
+    margin-right: 20%;
+}
+
+#caixa4{
+    background-color: brown;
+}
+
+#caixa1, #caixa2, #caixa3, #caixa4{
+    margin-top: 200px;
+}
+
+.caixa{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    text-align: center;
+    transition: transform 3s ease;
+}
+
+.cor-preto{
+    color: #000;
+}
+
+.cor-branco{
+    color: #fff;
+}
+
+#caixa1:hover{
+    transform: rotate(180deg);
+}
+
+#caixa2{
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+#caixa2:hover{
+    background-color: rgb(99, 44, 252);
+    transform: scale(1.5);
+}
+
+#caixa3:hover{
+    transform: translate(-40px, -100px);
+}
+
+#caixa4{
+    animation-name: quadrado;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes quadrado {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(-100px, 0px); }
+    50% { transform: translate(-100px, 100px); }
+    75% { transform: translate(0px, 100px); }
+    100% { transform: translate(0px, 0px); }
+}
+
+@keyframes cobrinha {
+    0%   { transform: translate(0px, 0px); }
+    10%  { transform: translate(20px, 10px); }
+    20%  { transform: translate(40px, -10px); }
+    30%  { transform: translate(60px, 10px); }
+    40%  { transform: translate(80px, -10px); }
+    50%  { transform: translate(100px, 10px); }
+    60%  { transform: translate(120px, -10px); }
+    70%  { transform: translate(140px, 10px); }
+    80%  { transform: translate(160px, -10px); }
+    90%  { transform: translate(180px, 10px); }
+    100% { transform: translate(200px, 0px); }
+}
