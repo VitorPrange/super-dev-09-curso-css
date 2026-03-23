@@ -1,0 +1,38 @@
+.caixa{
+    width: 200px;
+    display: inline-block;
+    background-color:bisque ;
+    height: 200px;
+    
+}
+
+.borda-topo{
+    border-top-width: 5px;
+    border-top-color: violet;
+    border-top-style: solid;
+}
+
+.borda-direita{
+    border-right-width: 5px;
+    border-right-color: greenyellow;
+    border-right-style: dashed;
+}
+
+.borda-base{
+    border-bottom-width: 5px;
+    border-bottom-color: orange;
+    border-bottom-style: double;
+}
+
+.borda-esquerda{
+    border-left-width: 5px;
+    border-left-color: brown;
+    border-left-style: ridge;
+}
+
+.borda-completa{
+    border-top: 5px dotted blueviolet;
+    border-right: 5px groove crimson;
+    border-bottom: 5px outset paleturquoise;
+    border-left: 5px outset palegreen;
+}
